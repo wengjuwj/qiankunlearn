@@ -1,0 +1,25 @@
+{
+    "name": "qiankun-learn",
+    "version": "1.0.0",
+    "description": "用qiankun来实现vue技术栈的前端微服务",
+    "main": "index.js",
+    "scripts": {
+        "install:main": "cd main && npm install",
+        "install:history": "cd app-vue-history && npm install",
+        "install:oaweb": "cd oa-web && npm install",
+        "install-all": "npm-run-all install:*",
+        "build:main": "cd main && npm run build",
+        "build:history": "cd app-vue-history && npm run build ",
+        "build:oaweb": "cd oa-web && npm run build ",
+        "build-all": "npm-run-all --parallel build:*",
+        "start:main": "cd main && npm run serve",
+        "start:history": "cd app-vue-history && npm run serve",
+        "start:oaweb": "cd oa-web && npm run serve",
+        "start-all": "npm-run-all --parallel start:*"
+       
+        
+    },
+    "dependencies": {
+        "npm-run-all": "^4.1.5"
+    }
+}
